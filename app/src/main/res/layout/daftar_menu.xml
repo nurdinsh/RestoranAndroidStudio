@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/daftar_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nurdiansyah.restoran.DaftarMenu">
+
+
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/ayambakar_id"
+        android:contentDescription="ayam bakar yg lezat"
+        android:src="@drawable/ayambakar"
+        android:onClick="showayambakar"
+        android:padding="10dp"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/ayamgoreng_id"
+        android:padding="10dp"
+        android:contentDescription="ayam goreng yg lezat"
+        android:src="@drawable/ayamgoreng"
+        android:onClick="showayamgoreng"
+        android:layout_below="@+id/ayambakar_id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/miegoreng_id"
+        android:padding="10dp"
+        android:contentDescription="mie goreng asik"
+        android:src="@drawable/miegoreng"
+        android:onClick="showmiegoreng"
+        android:layout_below="@+id/ayamgoreng_id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/mierebus_id"
+        android:padding="10dp"
+        android:src="@drawable/mierebus"
+        android:onClick="showmierebus"
+        android:layout_below="@+id/ayamgoreng_id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="83dp"/>
+
+    <TextView
+        android:text="Mie Rebus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/mierebus_id"
+        android:layout_toRightOf="@+id/mierebus_id"
+        android:layout_toEndOf="@+id/mierebus_id"
+        android:textStyle="bold"
+        android:id="@+id/text_mierebus_id"/>
+
+    <TextView
+        android:text="Ayam Goreng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ayamgoreng_id"
+        android:layout_toEndOf="@+id/ayamgoreng_id"
+        android:layout_alignTop="@+id/ayamgoreng_id"
+        android:textStyle="bold"
+        android:id="@+id/text_ayamgoreng_id"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/nasigoreng_id"
+            android:src="@drawable/nasigoreng"
+            android:padding="10dp"
+            android:onClick="shoenasigoreng"
+            android:layout_below="@+id/mierebus_id"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nasi Goreng"
+        android:layout_alignTop="@+id/nasigoreng_id"
+        android:layout_toRightOf="@+id/nasigoreng_id"
+        android:layout_toEndOf="@+id/nasigoreng_id"
+        android:textStyle="bold"
+        android:id="@+id/text_nasgoe_id"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/soto_id"
+        android:src="@drawable/sotoayam"
+        android:padding="10dp"
+        android:layout_below="@+id/nasigoreng_id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="shownasigoreng"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soto Ayam"
+        android:layout_alignTop="@+id/soto_id"
+        android:layout_toRightOf="@+id/soto_id"
+        android:layout_toEndOf="@+id/soto_id"
+        android:textStyle="bold"
+        android:id="@+id/text_soto_id"/>
+
+    <TextView
+        android:text="Ayam Bakar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/text_ayambakar_id"
+        android:layout_below="@+id/textView14"
+        android:layout_alignRight="@+id/text_nasgoe_id"
+        android:layout_alignEnd="@+id/text_nasgoe_id"/>
+
+
+    <TextView
+        android:text="Harga Rp15.000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_ayambakar_id"
+        android:layout_toRightOf="@+id/ayambakar_id"
+        android:layout_toEndOf="@+id/ayambakar_id"
+        android:id="@+id/textView18"/>
+
+    <TextView
+        android:text="Harga Rp10.000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView20"
+        android:layout_below="@+id/text_mierebus_id"
+        android:layout_toRightOf="@+id/mierebus_id"
+        android:layout_toEndOf="@+id/mierebus_id"/>
+
+    <TextView
+        android:text="Harga Rp12.000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_nasgoe_id"
+        android:layout_toRightOf="@+id/nasigoreng_id"
+        android:layout_toEndOf="@+id/nasigoreng_id"
+        android:id="@+id/textView21"/>
+
+    <TextView
+        android:text="Harga Rp17.000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_soto_id"
+        android:layout_toRightOf="@+id/soto_id"
+        android:layout_toEndOf="@+id/soto_id"
+        android:id="@+id/textView22"/>
+
+    <TextView
+        android:text="Mie Goreng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ayamgoreng_id"
+        android:layout_toRightOf="@+id/miegoreng_id"
+        android:layout_toEndOf="@+id/miegoreng_id"
+        android:id="@+id/text_miegoreng_id"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga Rp15.000"
+        android:layout_below="@+id/text_miegoreng_id"
+        android:layout_toRightOf="@+id/ayamgoreng_id"
+        android:layout_toEndOf="@+id/ayamgoreng_id"/>
+
+    <TextView
+        android:text="Harga Rp15.000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_ayamgoreng_id"
+        android:layout_alignLeft="@+id/text_ayamgoreng_id"
+        android:layout_alignStart="@+id/text_ayamgoreng_id"
+        android:id="@+id/textView28"/>
+
+
+</RelativeLayout>

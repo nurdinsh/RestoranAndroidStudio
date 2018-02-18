@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Restoran</string>
+    <string-array name="labels_array">
+        <item>Meja 1</item>
+        <item>Meja 2</item>
+        <item>Meja 3</item>
+        <item>Meja 4</item>
+    </string-array>
+    <string name="title_activity_daftar_menu">DaftarMenu</string>
+    <string name="pilih_pesanan">Pilih Pesanan</string>
+</resources>
